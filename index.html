@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/src/image/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitBitEx - Digital Asset Exchange</title>
+</head>
+<body>
+    <div id="App">
+        <router-view></router-view>
+    </div>
+    <div id="GlobalPageLoading" class="page-loading">
+        <span class="loading-spinner"></span>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof FastClick !== 'undefined') {
+                FastClick.attach(document.body);
+            }
+        }, false);
+    </script>
+</body>
+</html>

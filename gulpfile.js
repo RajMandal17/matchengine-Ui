@@ -26,7 +26,7 @@ options = minimist(process.argv.slice(2));
 isProduction = options.env == 'prod';
 buildPath = './build/web';
 routeBase = '/';
-apiProxy = 'https://gitbitex.com:8080/';
+apiProxy = 'https://gitbitex.cloud:8080/';
 
 function createTask(task, taskName) {
     if (task.type == 'concat') {
