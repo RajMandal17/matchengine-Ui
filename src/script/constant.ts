@@ -19,6 +19,8 @@ export class Constant {
         USDT: '$',
     }
     static AGGREGATION = [1, 5, 10, 50, 100, 250, 500, 1000];
-    static SOCKET_SERVER = 'wss://gitbitex.cloud:8080/ws';
+   // static SOCKET_SERVER = 'wss://gitbitex.cloud:8080/ws';
+       static SOCKET_SERVER = 'ws://localhost:8084/ws';
+
 
 }

@@ -17,11 +17,12 @@ import { StoreService } from './../../../store/service';
 import { Dom, Component, Prop, Watch, Emit } from "./../../component";
 import { getTradingViewConfig } from '../../../chart/config';
 import { UDFCompatibleDatafeed } from '../../../chart/datafeed';
+import template from './tradingview.jade';
 
 declare var TradingView: any;
 declare var AmCharts: any;
 
-@Dom('chart-tradingview', require('./tradingview.jade')())
+@Dom('chart-tradingview', template())
 export class TradingviewChartComponent extends Component {
 
     @Prop()
